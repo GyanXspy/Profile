@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyanaranjan Patra - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #2a2a4e);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #00ddeb;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            color: #00ddeb;
+        }
+
+        .title {
+            font-size: 1.2em;
+            color: #b0b0ff;
+        }
+
+        section {
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            animation: slideIn 1s ease-in;
+        }
+
+        h2 {
+            color: #00ddeb;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #00ddeb;
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "▹";
+            color: #00ddeb;
+            position: absolute;
+            left: 0;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            animation: popupIn 0.5s ease;
+        }
+
+        .popup.active {
+            display: block;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #ff5555;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes popupIn {
+            from { transform: translate(-50%, -60%); opacity: 0; }
+            to { transform: translate(-50%, -50%); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Profile Photo" class="profile-img" id="profilePhoto">
+            <h1>Gyana Ranjan Patra</h1>
+            <p class="title">Software Developer</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Java Developer with expertise in Spring Boot, Spring MVC, and Full-Stack Web Development. Strong knowledge of Data Structures & Algorithms, MySQL, and backend development. Passionate about scalable and efficient software solutions.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Location: Dhenkanal, Odisha, India</li>
+                <li>Email: <a href="mailto:gyanaranjanpatra780@gmail.com" style="color: #00ddeb;">gyanaranjanpatra780@gmail.com</a></li>
+                <li>Phone: +91-9692426076</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Java (Core, J2EE), SQL</li>
+                <li>Frameworks & Technologies: Spring Boot, Spring MVC, Hibernate, RESTful & SOAP Web Services</li>
+                <li>Frontend: HTML, CSS, JavaScript, Bootstrap</li>
+                <li>Databases: MySQL, SQL</li>
+                <li>Concepts: Microservices Architecture, Object-Oriented Design (OOD), Data Structures and Algorithms</li>
+                <li>Tools & Platforms: JIRA, Eclipse IDE, Git</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Technology in Computer Science and Engineering</li>
+                <li>ITER, Siksha 'O' Anusandhan, Bhubaneswar, Odisha</li>
+                <li>CGPA: 7.5</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>Java Backend Developer</li>
+                <li>Developed and maintained REST & SOAP-based APIs for web applications.</li>
+                <li>Designed and optimized SQL databases for high-performance transactions.</li>
+                <li>Implemented Spring Boot microservices for scalable applications.</li>
+                <li>Enhanced security using Spring Security.</li>
+                <li>Worked with JIRA for issue tracking and Agile development.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Cloud Kitchen Web Application</li>
+                <li>Developed an application to manage cloud kitchens, integrating ordering, payments, and inventory management.</li>
+            </ul>
+        </section>
+
+        <section id="additional">
+            <h2>Additional Information</h2>
+            <ul>
+                <li>Passionate about problem-solving, system design, and scalability.</li>
+                <li>Active contributor to open-source projects and coding challenges.</li>
+                <li>Languages: English (Fluent), Hindi (Average), Odia (Fluent)</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="popup" id="contactPopup">
+        <span class="close-btn" id="closePopup">×</span>
+        <h3>Contact Info</h3>
+        <p>Email: gyanaranjanpatra780@gmail.com</p>
+        <p>Phone: +91-9692426076</p>
+    </div>
+
+    <script>
+        const profilePhoto = document.getElementById('profilePhoto');
+        const popup = document.getElementById('contactPopup');
+        const closePopup = document.getElementById('closePopup');
+
+        profilePhoto.addEventListener('click', () => {
+            popup.classList.add('active');
+        });
+
+        closePopup.addEventListener('click', () => {
+            popup.classList.remove('active');
+        });
+
+        // Close popup when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!popup.contains(e.target) && e.target !== profilePhoto) {
+                popup.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
